@@ -48,6 +48,6 @@ jobs:
         with:
           path: './site'
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy website
         id: deployment
         uses: actions/deploy-pages@v4
