@@ -1,5 +1,5 @@
 
-name: Deploy Personal Portfolio
+name: Deploy OIBSIP Projects
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - 'WebDev-L1-PersonalPortfolio/**'
+      - 'WebDev-L1-TemperatureConverter/**'
       - '.github/workflows/main.yml'
   workflow_dispatch:
 
@@ -36,10 +37,16 @@ jobs:
         with:
           enablement: true
 
-      - name: Upload portfolio files
+      - name: Prepare website files
+        run: |
+          mkdir -p site/temperature-converter
+          cp -R WebDev-L1-PersonalPortfolio/. site/
+          cp -R WebDev-L1-TemperatureConverter/. site/temperature-converter/
+
+      - name: Upload website files
         uses: actions/upload-pages-artifact@v4
         with:
-          path: './WebDev-L1-PersonalPortfolio'
+          path: './site'
 
       - name: Deploy to GitHub Pages
         id: deployment
