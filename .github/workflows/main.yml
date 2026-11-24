@@ -6,6 +6,7 @@ on:
     branches:
       - main
     paths:
+      - 'WebDev-L1-LandingPage/**'
       - 'WebDev-L1-PersonalPortfolio/**'
       - 'WebDev-L1-TemperatureConverter/**'
       - '.github/workflows/main.yml'
@@ -39,9 +40,17 @@ jobs:
 
       - name: Prepare website files
         run: |
+          mkdir -p site/landing-page
           mkdir -p site/temperature-converter
+
+          cp -R WebDev-L1-LandingPage/. site/landing-page/
           cp -R WebDev-L1-PersonalPortfolio/. site/
           cp -R WebDev-L1-TemperatureConverter/. site/temperature-converter/
+
+          echo "Checking deployment files..."
+          test -f site/index.html
+          test -f site/landing-page/index.html
+          test -f site/temperature-converter/index.html
 
       - name: Upload website files
         uses: actions/upload-pages-artifact@v4
