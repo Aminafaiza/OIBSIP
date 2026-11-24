@@ -6,6 +6,10 @@ NOVA is a modern and responsive landing page designed for a fictional productivi
 
 This project was developed as part of **Oasis Infobyte Internship – Web Development and Designing, Level 1, Task 1**.
 
+## 🚀 Live Demo
+
+[View Landing Page](https://aminafaiza.github.io/OIBSIP/landing-page/)
+
 ## Objectives
 
 - Build a professional landing page using HTML5 and CSS3.
