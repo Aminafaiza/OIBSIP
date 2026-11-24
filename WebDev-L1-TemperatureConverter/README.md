@@ -4,7 +4,7 @@ A responsive and user-friendly Temperature Converter built using HTML5, CSS3, an
 
 ## 🚀 Live Demo
 
-[View Temperature Converter](YOUR_LIVE_DEMO_LINK)
+[View Temperature Converter](https://aminafaiza.github.io/OIBSIP/temperature-converter/)
 
 ## 📌 Project Overview
 
