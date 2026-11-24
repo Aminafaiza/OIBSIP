@@ -4,7 +4,9 @@
 A responsive personal portfolio website developed as part of the Oasis Infobyte Web Development and Designing Internship (OIBSIP), Level 1 – Task 2.
 
 The website showcases my profile, technical skills, academic background, projects, and contact information.
+## 🚀 Live Demo
 
+[View My Portfolio](https://aminafaiza.github.io/OIBSIP/)
 ## Features
 - Professional hero section with developer avatar
 - About Me section
